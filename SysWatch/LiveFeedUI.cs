@@ -98,5 +98,19 @@ namespace SysWatch
         {
             Output.Clear();
         }
+        private void TSCloseFeed_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+        //Increase Text Size
+        private void TSIncrease_Click(object sender, EventArgs e)
+        {
+
+        }
+        //Decrease Text Size
+        private void TSDecrease_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

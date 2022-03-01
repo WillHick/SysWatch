@@ -197,9 +197,9 @@ namespace SysWatch
             this.AppMenu.ForeColor = System.Drawing.Color.White;
             this.AppMenu.Location = new System.Drawing.Point(14, 371);
             this.AppMenu.Name = "AppMenu";
-            this.AppMenu.Size = new System.Drawing.Size(65, 25);
+            this.AppMenu.Size = new System.Drawing.Size(54, 25);
             this.AppMenu.TabIndex = 13;
-            this.AppMenu.Text = "Menu";
+            this.AppMenu.Text = "Feed";
             this.AppMenu.Click += new System.EventHandler(this.AppMenu_Click);
             // 
             // CloseApp
@@ -219,7 +219,7 @@ namespace SysWatch
             this.ResetCount.AutoSize = true;
             this.ResetCount.Font = new System.Drawing.Font("Microsoft YaHei", 8.6F, System.Drawing.FontStyle.Bold);
             this.ResetCount.ForeColor = System.Drawing.Color.White;
-            this.ResetCount.Location = new System.Drawing.Point(88, 371);
+            this.ResetCount.Location = new System.Drawing.Point(85, 371);
             this.ResetCount.Name = "ResetCount";
             this.ResetCount.Size = new System.Drawing.Size(61, 25);
             this.ResetCount.TabIndex = 15;

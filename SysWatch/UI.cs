@@ -92,8 +92,6 @@ namespace SysWatch
             this._change = 0;
             this._create = 0;
             this._delete = 0;
-
-            SysWatch.Dispose();
         }
     }
 }
