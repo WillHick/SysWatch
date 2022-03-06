@@ -1,4 +1,4 @@
-# SysWatch Beta 
+# SysWatch Beta (1.1.3)
 
 # About
 The app is a simple C# WPF application and will provide you with counts and a feed with the data detected down below is what SysWatch will detect and display in counts.
@@ -12,13 +12,14 @@ SysWatch is a C# Windows application using the FileSystemWatcher component to de
   - How many files have been moved
 
 # UI
-Main Display
+Main Display (1.1.3)
 
-<img width="124" alt="SWSnip" src="https://user-images.githubusercontent.com/48844761/155839377-b76f4aea-3d8e-48f8-b895-6116707d01a0.PNG">
+<img width="123" alt="SysWatch1 1 3UI" src="https://user-images.githubusercontent.com/48844761/156912745-b371782a-a334-4049-ac96-52ab5ed141a3.PNG">
 
-Live Feed Display
 
-<img width="500" alt="SWSnip2" src="https://user-images.githubusercontent.com/48844761/155839393-7cf7bd8c-19bc-4e3f-b852-9e28d8a9e257.PNG">
+More Display (1.1.3)
+
+<img width="300" alt="SysWatch1 1 3UIDoubleClick" src="https://user-images.githubusercontent.com/48844761/156912768-9e877ccd-030e-4f5d-84fd-efe027a8d4d8.PNG">
 
 
 # Help
