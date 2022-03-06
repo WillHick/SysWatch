@@ -13,7 +13,8 @@ namespace SysWatch
 {
     public partial class UI : Form
     {
-        SysWatch.LiveFeedUI LFUI = new SysWatch.LiveFeedUI();
+        //Disable For Now (Remake)
+        //SysWatch.LiveFeedUI LFUI = new SysWatch.LiveFeedUI();
 
         [DllImport("Gdi32.dll")]
         private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int nRightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);     
@@ -35,17 +36,15 @@ namespace SysWatch
 
             //System File Watch
             string path = "C:/";
-            SysWatch.Path = path;
-            SysWatch.EnableRaisingEvents = true;
-            SysWatch.IncludeSubdirectories = true;
-            WatchedLocation.Text = SysWatch.Path.ToString();
+            SysWatchFile.Path = path;
+            SysWatchFile.EnableRaisingEvents = true;
+            SysWatchFile.IncludeSubdirectories = true;
+            WatchedLocation.Text = SysWatchFile.Path.ToString();
 
             //Other
             this.ShowInTaskbar = false;
             this.ShowIcon = false;
             this.TopMost = false;
-
-            //MenuPanel.Hide();
         }
 
         //Ints
@@ -80,18 +79,12 @@ namespace SysWatch
         {
             Application.Exit();
         }
-        private void AppMenu_Click(object sender, EventArgs e)
-        {
-            LFUI.Show();
-
-            //MenuPanel.Show();
-        }
         private void ResetCount_Click(object sender, EventArgs e)
         {
             this._rename = 0;
             this._change = 0;
             this._create = 0;
             this._delete = 0;
-        }
+        }        
     }
 }

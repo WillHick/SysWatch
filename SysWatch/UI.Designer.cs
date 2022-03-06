@@ -29,7 +29,7 @@ namespace SysWatch
         /// </summary>
         private void InitializeComponent()
         {
-            this.SysWatch = new System.IO.FileSystemWatcher();
+            this.SysWatchFile = new System.IO.FileSystemWatcher();
             this.UIHeader = new System.Windows.Forms.Label();
             this.BetaHeader = new System.Windows.Forms.Label();
             this.ChangedHeader = new System.Windows.Forms.Label();
@@ -42,26 +42,25 @@ namespace SysWatch
             this.NumDelete = new System.Windows.Forms.Label();
             this.CWHeader = new System.Windows.Forms.Label();
             this.WatchedLocation = new System.Windows.Forms.Label();
-            this.AppMenu = new System.Windows.Forms.Label();
             this.CloseApp = new System.Windows.Forms.Label();
             this.ResetCount = new System.Windows.Forms.Label();
             this.UIDash4 = new System.Windows.Forms.Label();
             this.UIDash3 = new System.Windows.Forms.Label();
             this.UIDash2 = new System.Windows.Forms.Label();
             this.UIDash1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.SysWatch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SysWatchFile)).BeginInit();
             this.SuspendLayout();
             // 
-            // SysWatch
+            // SysWatchFile
             // 
-            this.SysWatch.EnableRaisingEvents = true;
-            this.SysWatch.IncludeSubdirectories = true;
-            this.SysWatch.Path = "C:\\";
-            this.SysWatch.SynchronizingObject = this;
-            this.SysWatch.Changed += new System.IO.FileSystemEventHandler(this.SysWatch_Changed);
-            this.SysWatch.Created += new System.IO.FileSystemEventHandler(this.SysWatch_Created);
-            this.SysWatch.Deleted += new System.IO.FileSystemEventHandler(this.SysWatch_Deleted);
-            this.SysWatch.Renamed += new System.IO.RenamedEventHandler(this.SysWatch_Renamed);
+            this.SysWatchFile.EnableRaisingEvents = true;
+            this.SysWatchFile.IncludeSubdirectories = true;
+            this.SysWatchFile.Path = "C:\\";
+            this.SysWatchFile.SynchronizingObject = this;
+            this.SysWatchFile.Changed += new System.IO.FileSystemEventHandler(this.SysWatch_Changed);
+            this.SysWatchFile.Created += new System.IO.FileSystemEventHandler(this.SysWatch_Created);
+            this.SysWatchFile.Deleted += new System.IO.FileSystemEventHandler(this.SysWatch_Deleted);
+            this.SysWatchFile.Renamed += new System.IO.RenamedEventHandler(this.SysWatch_Renamed);
             // 
             // UIHeader
             // 
@@ -190,24 +189,12 @@ namespace SysWatch
             this.WatchedLocation.Size = new System.Drawing.Size(0, 19);
             this.WatchedLocation.TabIndex = 12;
             // 
-            // AppMenu
-            // 
-            this.AppMenu.AutoSize = true;
-            this.AppMenu.Font = new System.Drawing.Font("Microsoft YaHei", 8.6F, System.Drawing.FontStyle.Bold);
-            this.AppMenu.ForeColor = System.Drawing.Color.White;
-            this.AppMenu.Location = new System.Drawing.Point(14, 371);
-            this.AppMenu.Name = "AppMenu";
-            this.AppMenu.Size = new System.Drawing.Size(54, 25);
-            this.AppMenu.TabIndex = 13;
-            this.AppMenu.Text = "Feed";
-            this.AppMenu.Click += new System.EventHandler(this.AppMenu_Click);
-            // 
             // CloseApp
             // 
             this.CloseApp.AutoSize = true;
             this.CloseApp.Font = new System.Drawing.Font("Microsoft YaHei", 8.6F, System.Drawing.FontStyle.Bold);
             this.CloseApp.ForeColor = System.Drawing.Color.White;
-            this.CloseApp.Location = new System.Drawing.Point(157, 371);
+            this.CloseApp.Location = new System.Drawing.Point(94, 365);
             this.CloseApp.Name = "CloseApp";
             this.CloseApp.Size = new System.Drawing.Size(60, 25);
             this.CloseApp.TabIndex = 14;
@@ -219,7 +206,7 @@ namespace SysWatch
             this.ResetCount.AutoSize = true;
             this.ResetCount.Font = new System.Drawing.Font("Microsoft YaHei", 8.6F, System.Drawing.FontStyle.Bold);
             this.ResetCount.ForeColor = System.Drawing.Color.White;
-            this.ResetCount.Location = new System.Drawing.Point(85, 371);
+            this.ResetCount.Location = new System.Drawing.Point(14, 365);
             this.ResetCount.Name = "ResetCount";
             this.ResetCount.Size = new System.Drawing.Size(61, 25);
             this.ResetCount.TabIndex = 15;
@@ -275,7 +262,7 @@ namespace SysWatch
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.ClientSize = new System.Drawing.Size(231, 422);
+            this.ClientSize = new System.Drawing.Size(231, 419);
             this.ControlBox = false;
             this.Controls.Add(this.UIDash4);
             this.Controls.Add(this.UIDash3);
@@ -283,7 +270,6 @@ namespace SysWatch
             this.Controls.Add(this.UIDash1);
             this.Controls.Add(this.ResetCount);
             this.Controls.Add(this.CloseApp);
-            this.Controls.Add(this.AppMenu);
             this.Controls.Add(this.WatchedLocation);
             this.Controls.Add(this.CWHeader);
             this.Controls.Add(this.NumDelete);
@@ -302,7 +288,7 @@ namespace SysWatch
             this.ShowIcon = false;
             this.Text = "0";
             this.Load += new System.EventHandler(this.UI_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.SysWatch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SysWatchFile)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,7 +296,7 @@ namespace SysWatch
 
         #endregion
 
-        private System.IO.FileSystemWatcher SysWatch;
+        private System.IO.FileSystemWatcher SysWatchFile;
         private System.Windows.Forms.Label UIHeader;
         private System.Windows.Forms.Label BetaHeader;
         private System.Windows.Forms.Label ChangedHeader;
@@ -324,7 +310,6 @@ namespace SysWatch
         private System.Windows.Forms.Label WatchedLocation;
         private System.Windows.Forms.Label CWHeader;
         private System.Windows.Forms.Label CloseApp;
-        private System.Windows.Forms.Label AppMenu;
         private System.Windows.Forms.Label ResetCount;
         private System.Windows.Forms.Label UIDash4;
         private System.Windows.Forms.Label UIDash3;
