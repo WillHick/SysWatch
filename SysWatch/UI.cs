@@ -15,6 +15,7 @@ namespace SysWatch
     {
         //Disable For Now (Remake)
         //SysWatch.LiveFeedUI LFUI = new SysWatch.LiveFeedUI();
+        SysWatch.DoubleClickMenu DCMUI = new SysWatch.DoubleClickMenu();
 
         [DllImport("Gdi32.dll")]
         private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int nRightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);     
@@ -85,6 +86,11 @@ namespace SysWatch
             this._change = 0;
             this._create = 0;
             this._delete = 0;
-        }        
+        }
+
+        private void UI_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            DCMUI.Show();
+        }
     }
 }

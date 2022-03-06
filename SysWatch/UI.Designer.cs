@@ -194,7 +194,7 @@ namespace SysWatch
             this.CloseApp.AutoSize = true;
             this.CloseApp.Font = new System.Drawing.Font("Microsoft YaHei", 8.6F, System.Drawing.FontStyle.Bold);
             this.CloseApp.ForeColor = System.Drawing.Color.White;
-            this.CloseApp.Location = new System.Drawing.Point(94, 365);
+            this.CloseApp.Location = new System.Drawing.Point(94, 367);
             this.CloseApp.Name = "CloseApp";
             this.CloseApp.Size = new System.Drawing.Size(60, 25);
             this.CloseApp.TabIndex = 14;
@@ -206,7 +206,7 @@ namespace SysWatch
             this.ResetCount.AutoSize = true;
             this.ResetCount.Font = new System.Drawing.Font("Microsoft YaHei", 8.6F, System.Drawing.FontStyle.Bold);
             this.ResetCount.ForeColor = System.Drawing.Color.White;
-            this.ResetCount.Location = new System.Drawing.Point(14, 365);
+            this.ResetCount.Location = new System.Drawing.Point(14, 367);
             this.ResetCount.Name = "ResetCount";
             this.ResetCount.Size = new System.Drawing.Size(61, 25);
             this.ResetCount.TabIndex = 15;
@@ -288,6 +288,7 @@ namespace SysWatch
             this.ShowIcon = false;
             this.Text = "0";
             this.Load += new System.EventHandler(this.UI_Load);
+            this.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.UI_MouseDoubleClick);
             ((System.ComponentModel.ISupportInitialize)(this.SysWatchFile)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

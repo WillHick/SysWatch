@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DoubleClickMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoubleClickMenu.Designer.cs">
+      <DependentUpon>DoubleClickMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="LiveFeedUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DoubleClickMenu.resx">
+      <DependentUpon>DoubleClickMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LiveFeedUI.resx">
       <DependentUpon>LiveFeedUI.cs</DependentUpon>
     </EmbeddedResource>
