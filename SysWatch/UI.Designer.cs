@@ -48,6 +48,7 @@ namespace SysWatch
             this.UIDash3 = new System.Windows.Forms.Label();
             this.UIDash2 = new System.Windows.Forms.Label();
             this.UIDash1 = new System.Windows.Forms.Label();
+            this.CopyStats = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.SysWatchFile)).BeginInit();
             this.SuspendLayout();
             // 
@@ -194,7 +195,7 @@ namespace SysWatch
             this.CloseApp.AutoSize = true;
             this.CloseApp.Font = new System.Drawing.Font("Microsoft YaHei", 8.6F, System.Drawing.FontStyle.Bold);
             this.CloseApp.ForeColor = System.Drawing.Color.White;
-            this.CloseApp.Location = new System.Drawing.Point(94, 367);
+            this.CloseApp.Location = new System.Drawing.Point(14, 405);
             this.CloseApp.Name = "CloseApp";
             this.CloseApp.Size = new System.Drawing.Size(60, 25);
             this.CloseApp.TabIndex = 14;
@@ -206,11 +207,11 @@ namespace SysWatch
             this.ResetCount.AutoSize = true;
             this.ResetCount.Font = new System.Drawing.Font("Microsoft YaHei", 8.6F, System.Drawing.FontStyle.Bold);
             this.ResetCount.ForeColor = System.Drawing.Color.White;
-            this.ResetCount.Location = new System.Drawing.Point(14, 367);
+            this.ResetCount.Location = new System.Drawing.Point(14, 366);
             this.ResetCount.Name = "ResetCount";
-            this.ResetCount.Size = new System.Drawing.Size(61, 25);
+            this.ResetCount.Size = new System.Drawing.Size(130, 25);
             this.ResetCount.TabIndex = 15;
-            this.ResetCount.Text = "Reset";
+            this.ResetCount.Text = "Reset Counts";
             this.ResetCount.Click += new System.EventHandler(this.ResetCount_Click);
             // 
             // UIDash4
@@ -257,13 +258,26 @@ namespace SysWatch
             this.UIDash1.TabIndex = 16;
             this.UIDash1.Text = "-";
             // 
+            // CopyStats
+            // 
+            this.CopyStats.AutoSize = true;
+            this.CopyStats.Font = new System.Drawing.Font("Microsoft YaHei", 8.6F, System.Drawing.FontStyle.Bold);
+            this.CopyStats.ForeColor = System.Drawing.Color.White;
+            this.CopyStats.Location = new System.Drawing.Point(152, 366);
+            this.CopyStats.Name = "CopyStats";
+            this.CopyStats.Size = new System.Drawing.Size(58, 25);
+            this.CopyStats.TabIndex = 20;
+            this.CopyStats.Text = "Copy";
+            this.CopyStats.Click += new System.EventHandler(this.CopyStats_Click);
+            // 
             // UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.ClientSize = new System.Drawing.Size(231, 419);
+            this.ClientSize = new System.Drawing.Size(231, 456);
             this.ControlBox = false;
+            this.Controls.Add(this.CopyStats);
             this.Controls.Add(this.UIDash4);
             this.Controls.Add(this.UIDash3);
             this.Controls.Add(this.UIDash2);
@@ -316,6 +330,7 @@ namespace SysWatch
         private System.Windows.Forms.Label UIDash3;
         private System.Windows.Forms.Label UIDash2;
         private System.Windows.Forms.Label UIDash1;
+        private System.Windows.Forms.Label CopyStats;
     }
 }
 

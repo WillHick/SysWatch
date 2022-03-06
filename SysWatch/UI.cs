@@ -87,10 +87,13 @@ namespace SysWatch
             this._create = 0;
             this._delete = 0;
         }
-
         private void UI_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             DCMUI.Show();
+        }
+        private void CopyStats_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText("Copied At  : " + DateTime.Now.ToShortTimeString() + Environment.NewLine + "Changed Files : " + NumChanged.Text.ToString() + Environment.NewLine + "Created Files : " + NumCreated.Text.ToString() + Environment.NewLine + "Renamed Files : " + NumRename.Text.ToString() + Environment.NewLine + "Deleted Files : " + NumDelete.Text.ToString());
         }
     }
 }
