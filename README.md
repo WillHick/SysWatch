@@ -12,11 +12,5 @@ SysWatch is a C# Windows application using the FileSystemWatcher component to de
   - How many files have been moved
 
 # UI
-Main Display (1.1.3)
 
-<img width="123" alt="SysWatch1 1 3UI" src="https://user-images.githubusercontent.com/48844761/156912745-b371782a-a334-4049-ac96-52ab5ed141a3.PNG">
-
-
-More Display (1.1.3)
-
-<img width="300" alt="SysWatch1 1 3UIDoubleClick" src="https://user-images.githubusercontent.com/48844761/156912768-9e877ccd-030e-4f5d-84fd-efe027a8d4d8.PNG">
+<img width="423" alt="SysWatch1 1 3UI" src="https://user-images.githubusercontent.com/48844761/156914828-aad25529-4981-4c8e-946e-d7992d8e2d8d.PNG">
