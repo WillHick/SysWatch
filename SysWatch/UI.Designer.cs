@@ -29,9 +29,10 @@ namespace SysWatch
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI));
             this.SysWatchFile = new System.IO.FileSystemWatcher();
             this.UIHeader = new System.Windows.Forms.Label();
-            this.BetaHeader = new System.Windows.Forms.Label();
+            this.BuildHeader = new System.Windows.Forms.Label();
             this.ChangedHeader = new System.Windows.Forms.Label();
             this.CreatedHeader = new System.Windows.Forms.Label();
             this.DeletedHeader = new System.Windows.Forms.Label();
@@ -74,16 +75,16 @@ namespace SysWatch
             this.UIHeader.TabIndex = 0;
             this.UIHeader.Text = "SysWatch";
             // 
-            // BetaHeader
+            // BuildHeader
             // 
-            this.BetaHeader.AutoSize = true;
-            this.BetaHeader.Font = new System.Drawing.Font("Microsoft YaHei", 7F, System.Drawing.FontStyle.Bold);
-            this.BetaHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
-            this.BetaHeader.Location = new System.Drawing.Point(129, 24);
-            this.BetaHeader.Name = "BetaHeader";
-            this.BetaHeader.Size = new System.Drawing.Size(41, 19);
-            this.BetaHeader.TabIndex = 1;
-            this.BetaHeader.Text = "Beta";
+            this.BuildHeader.AutoSize = true;
+            this.BuildHeader.Font = new System.Drawing.Font("Microsoft YaHei", 7F, System.Drawing.FontStyle.Bold);
+            this.BuildHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.BuildHeader.Location = new System.Drawing.Point(129, 24);
+            this.BuildHeader.Name = "BuildHeader";
+            this.BuildHeader.Size = new System.Drawing.Size(44, 19);
+            this.BuildHeader.TabIndex = 1;
+            this.BuildHeader.Text = "1.1.3";
             // 
             // ChangedHeader
             // 
@@ -294,9 +295,10 @@ namespace SysWatch
             this.Controls.Add(this.RenamedHeader);
             this.Controls.Add(this.CreatedHeader);
             this.Controls.Add(this.ChangedHeader);
-            this.Controls.Add(this.BetaHeader);
+            this.Controls.Add(this.BuildHeader);
             this.Controls.Add(this.UIHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UI";
             this.Opacity = 0.9D;
             this.ShowIcon = false;
@@ -313,7 +315,7 @@ namespace SysWatch
 
         private System.IO.FileSystemWatcher SysWatchFile;
         private System.Windows.Forms.Label UIHeader;
-        private System.Windows.Forms.Label BetaHeader;
+        private System.Windows.Forms.Label BuildHeader;
         private System.Windows.Forms.Label ChangedHeader;
         private System.Windows.Forms.Label CreatedHeader;
         private System.Windows.Forms.Label DeletedHeader;
