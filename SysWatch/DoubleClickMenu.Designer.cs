@@ -152,6 +152,7 @@ namespace SysWatch
             this.button1.Text = "SysWatch Github";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // AvText
             // 
@@ -189,6 +190,7 @@ namespace SysWatch
             this.Other.TabIndex = 17;
             this.Other.Text = "Other";
             this.Other.UseVisualStyleBackColor = false;
+            this.Other.Click += new System.EventHandler(this.Other_Click);
             // 
             // DoubleClickMenu
             // 
