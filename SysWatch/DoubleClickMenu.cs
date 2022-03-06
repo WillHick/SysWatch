@@ -20,7 +20,7 @@ namespace SysWatch
         {
             ApText.Text = "App Path : " + Application.ExecutablePath.ToString();
             SpText.Text = "Start Path : " + Application.StartupPath.ToString();
-            
+            AvText.Text = "App Version : " + Application.ProductVersion.ToString();            
         }
         private void RestartButton_Click(object sender, EventArgs e)
         {
