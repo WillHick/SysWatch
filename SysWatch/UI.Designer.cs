@@ -300,7 +300,7 @@ namespace SysWatch
             this.Name = "UI";
             this.Opacity = 0.9D;
             this.ShowIcon = false;
-            this.Text = "0";
+            this.Text = "SysWatch";
             this.Load += new System.EventHandler(this.UI_Load);
             this.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.UI_MouseDoubleClick);
             ((System.ComponentModel.ISupportInitialize)(this.SysWatchFile)).EndInit();

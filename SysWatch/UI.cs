@@ -43,7 +43,6 @@ namespace SysWatch
             WatchedLocation.Text = SysWatchFile.Path.ToString();
 
             //Other
-            this.ShowInTaskbar = false;
             this.ShowIcon = false;
             this.TopMost = false;
         }
