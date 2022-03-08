@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,20 +15,30 @@ namespace SysWatch
     {
         private int _eventcount = 0;
 
+        [DllImport("Gdi32.dll")]
+        private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int nRightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);
+
         public LiveFeedUI()
         {
             InitializeComponent();
         }
         private void LiveFeedUI_Load(object sender, EventArgs e)
-        {            
-            //Set Window
-            this.CenterToScreen();
+        {
+            //Form Window
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.Region = Region.FromHrgn(LiveFeedUI.CreateRoundRectRgn(0, 0, base.Width, base.Height, 20, 20));
+
+            Rectangle workingArea = Screen.GetWorkingArea(this);
+            this.Location = new Point(workingArea.Right - 840 - base.Size.Width, workingArea.Bottom - 6 - base.Size.Height);
 
             //System File Watch
             string path = "C:/";
             SysWatchLiveFeed.Path = path;
             SysWatchLiveFeed.EnableRaisingEvents = true;
             SysWatchLiveFeed.IncludeSubdirectories = true;
+
+            //Feed Clearing
+            FeedClear.Start();
         }
         private void SysWatchLiveFeed_Changed(object sender, System.IO.FileSystemEventArgs e)
         {
@@ -93,34 +104,15 @@ namespace SysWatch
             this._eventcount++;
             this.Text = "SysWatch - Live Feed : Events Logged > " + this._eventcount.ToString();
         }
-        //Tool Strip Functions
-        private void TSClear_Click(object sender, EventArgs e)
-        {
-            Output.Clear();
-        }
-        private void TSCloseFeed_Click(object sender, EventArgs e)
+        private void HideFeed_Click(object sender, EventArgs e)
         {
             this.Hide();
+            FeedClear.Stop();
         }
-        //Increase Text Size
-        private void TSIncrease_Click(object sender, EventArgs e)
-        {          
-            float increaseSize;
-
-            increaseSize = Output.Font.Size;
-            increaseSize += 1.0F;
-            Output.Font = new Font(Output.Font.Name, increaseSize,
-            Output.Font.Style, Output.Font.Unit);
-        }
-        //Decrease Text Size
-        private void TSDecrease_Click(object sender, EventArgs e)
+        private void FeedClear_Tick(object sender, EventArgs e)
         {
-            float descreaseSize;
-
-            descreaseSize = Output.Font.Size;
-            descreaseSize -= 1.0F;
-            Output.Font = new Font(Output.Font.Name, descreaseSize,
-            Output.Font.Style, Output.Font.Unit);
+            Output.ResetText();
+            Output.Clear();
         }
     }
 }

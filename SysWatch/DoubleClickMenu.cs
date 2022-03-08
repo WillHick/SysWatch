@@ -14,19 +14,29 @@ namespace SysWatch
 {
     public partial class DoubleClickMenu : Form
     {
+        SysWatch.LiveFeedUI LFUI = new SysWatch.LiveFeedUI();
+
+        [DllImport("Gdi32.dll")]
+        private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int nRightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);
+
         public DoubleClickMenu()
         {
             InitializeComponent();
         }
         private void DoubleClickMenu_Load(object sender, EventArgs e)
         {
+            //Form Position
+            Rectangle workingArea = Screen.GetWorkingArea(this);
+            this.Location = new Point(workingArea.Right - 248 - base.Size.Width, workingArea.Bottom - 6 - base.Size.Height);
+
+            //Form Window
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.Region = Region.FromHrgn(DoubleClickMenu.CreateRoundRectRgn(0, 0, base.Width, base.Height, 20, 20));
+
             //Text Set
             ApText.Text = "App Path : " + Application.ExecutablePath.ToString();
             SpText.Text = "Start Path : " + Application.StartupPath.ToString();
             AvText.Text = "App Version : " + Application.ProductVersion.ToString();
-
-            //Keep Position
-            KeepPOS.Start();
         }
         private void RestartButton_Click(object sender, EventArgs e)
         {
@@ -46,13 +56,9 @@ namespace SysWatch
         }
         private void Other_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Thank You <3");
-        }
-        private void KeepPOS_Tick(object sender, EventArgs e)
-        {
-            //Form Position
-            Rectangle workingArea = Screen.GetWorkingArea(this);
-            this.Location = new Point(workingArea.Right - 240 - base.Size.Width, workingArea.Bottom - 0 - base.Size.Height);
+            LFUI.Show();
+            
+            //MessageBox.Show("Thank You <3");
         }
     }
 }

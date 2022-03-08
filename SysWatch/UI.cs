@@ -26,8 +26,6 @@ namespace SysWatch
         }
         private void UI_Load(object sender, EventArgs e)
         {
-            this.InitializeComponent();
-
             //Form Window
             this.FormBorderStyle = FormBorderStyle.None;
             this.Region = Region.FromHrgn(UI.CreateRoundRectRgn(0, 0, base.Width, base.Height, 20, 20));

@@ -29,17 +29,14 @@ namespace SysWatch
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.SysWatchLiveFeed = new System.IO.FileSystemWatcher();
             this.Output = new System.Windows.Forms.RichTextBox();
-            this.TSBase = new System.Windows.Forms.MenuStrip();
-            this.TSClear = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSCloseFeed = new System.Windows.Forms.ToolStripMenuItem();
-            this.textToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSIncrease = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSDecrease = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSSettings = new System.Windows.Forms.ToolStripMenuItem();
+            this.FeedHeader = new System.Windows.Forms.Label();
+            this.UIHeader = new System.Windows.Forms.Label();
+            this.FeedClear = new System.Windows.Forms.Timer(this.components);
+            this.HideFeed = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.SysWatchLiveFeed)).BeginInit();
-            this.TSBase.SuspendLayout();
             this.SuspendLayout();
             // 
             // SysWatchLiveFeed
@@ -56,101 +53,65 @@ namespace SysWatch
             this.Output.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.Output.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Output.DetectUrls = false;
-            this.Output.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Output.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Output.ForeColor = System.Drawing.Color.White;
-            this.Output.Location = new System.Drawing.Point(0, 0);
+            this.Output.Location = new System.Drawing.Point(0, 58);
             this.Output.Name = "Output";
-            this.Output.Size = new System.Drawing.Size(964, 606);
+            this.Output.Size = new System.Drawing.Size(779, 399);
             this.Output.TabIndex = 0;
             this.Output.Text = "";
             // 
-            // TSBase
+            // FeedHeader
             // 
-            this.TSBase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.TSBase.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.TSBase.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.TSBase.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.TSBase.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSClear,
-            this.TSSettings,
-            this.TSCloseFeed});
-            this.TSBase.Location = new System.Drawing.Point(0, 606);
-            this.TSBase.Name = "TSBase";
-            this.TSBase.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.TSBase.Size = new System.Drawing.Size(964, 36);
-            this.TSBase.TabIndex = 1;
-            this.TSBase.Text = "menuStrip1";
+            this.FeedHeader.AutoSize = true;
+            this.FeedHeader.Font = new System.Drawing.Font("Microsoft YaHei", 7F, System.Drawing.FontStyle.Bold);
+            this.FeedHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.FeedHeader.Location = new System.Drawing.Point(129, 24);
+            this.FeedHeader.Name = "FeedHeader";
+            this.FeedHeader.Size = new System.Drawing.Size(180, 19);
+            this.FeedHeader.TabIndex = 3;
+            this.FeedHeader.Text = "Live Feed Beta (Remake)";
             // 
-            // TSClear
+            // UIHeader
             // 
-            this.TSClear.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TSClear.ForeColor = System.Drawing.Color.White;
-            this.TSClear.Name = "TSClear";
-            this.TSClear.Size = new System.Drawing.Size(72, 32);
-            this.TSClear.Text = "Clear";
-            this.TSClear.Click += new System.EventHandler(this.TSClear_Click);
+            this.UIHeader.AutoSize = true;
+            this.UIHeader.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UIHeader.ForeColor = System.Drawing.Color.White;
+            this.UIHeader.Location = new System.Drawing.Point(14, 14);
+            this.UIHeader.Name = "UIHeader";
+            this.UIHeader.Size = new System.Drawing.Size(121, 30);
+            this.UIHeader.TabIndex = 2;
+            this.UIHeader.Text = "SysWatch";
             // 
-            // TSCloseFeed
+            // FeedClear
             // 
-            this.TSCloseFeed.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TSCloseFeed.ForeColor = System.Drawing.Color.White;
-            this.TSCloseFeed.Name = "TSCloseFeed";
-            this.TSCloseFeed.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TSCloseFeed.Size = new System.Drawing.Size(122, 32);
-            this.TSCloseFeed.Text = "Close Feed";
-            this.TSCloseFeed.Click += new System.EventHandler(this.TSCloseFeed_Click);
+            this.FeedClear.Interval = 2000;
+            this.FeedClear.Tick += new System.EventHandler(this.FeedClear_Tick);
             // 
-            // textToolStripMenuItem
+            // HideFeed
             // 
-            this.textToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.textToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSIncrease,
-            this.TSDecrease});
-            this.textToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.textToolStripMenuItem.Name = "textToolStripMenuItem";
-            this.textToolStripMenuItem.Size = new System.Drawing.Size(270, 36);
-            this.textToolStripMenuItem.Text = "Text Size";
-            // 
-            // TSIncrease
-            // 
-            this.TSIncrease.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.TSIncrease.ForeColor = System.Drawing.Color.White;
-            this.TSIncrease.Name = "TSIncrease";
-            this.TSIncrease.Size = new System.Drawing.Size(270, 36);
-            this.TSIncrease.Text = "Increase";
-            this.TSIncrease.Click += new System.EventHandler(this.TSIncrease_Click);
-            // 
-            // TSDecrease
-            // 
-            this.TSDecrease.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.TSDecrease.ForeColor = System.Drawing.Color.White;
-            this.TSDecrease.Name = "TSDecrease";
-            this.TSDecrease.Size = new System.Drawing.Size(270, 36);
-            this.TSDecrease.Text = "Decrease";
-            this.TSDecrease.Click += new System.EventHandler(this.TSDecrease_Click);
-            // 
-            // TSSettings
-            // 
-            this.TSSettings.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.textToolStripMenuItem});
-            this.TSSettings.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TSSettings.ForeColor = System.Drawing.Color.White;
-            this.TSSettings.Name = "TSSettings";
-            this.TSSettings.Size = new System.Drawing.Size(99, 32);
-            this.TSSettings.Text = "Settings";
+            this.HideFeed.AutoSize = true;
+            this.HideFeed.Font = new System.Drawing.Font("NSimSun", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HideFeed.ForeColor = System.Drawing.Color.White;
+            this.HideFeed.Location = new System.Drawing.Point(732, 13);
+            this.HideFeed.Name = "HideFeed";
+            this.HideFeed.Size = new System.Drawing.Size(33, 34);
+            this.HideFeed.TabIndex = 4;
+            this.HideFeed.Text = ">";
+            this.HideFeed.Click += new System.EventHandler(this.HideFeed_Click);
             // 
             // LiveFeedUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.ClientSize = new System.Drawing.Size(964, 642);
+            this.ClientSize = new System.Drawing.Size(778, 456);
             this.ControlBox = false;
+            this.Controls.Add(this.HideFeed);
+            this.Controls.Add(this.FeedHeader);
+            this.Controls.Add(this.UIHeader);
             this.Controls.Add(this.Output);
-            this.Controls.Add(this.TSBase);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MainMenuStrip = this.TSBase;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LiveFeedUI";
@@ -158,8 +119,6 @@ namespace SysWatch
             this.Text = "SysWatch - Live Feed";
             this.Load += new System.EventHandler(this.LiveFeedUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.SysWatchLiveFeed)).EndInit();
-            this.TSBase.ResumeLayout(false);
-            this.TSBase.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,12 +128,9 @@ namespace SysWatch
 
         private System.IO.FileSystemWatcher SysWatchLiveFeed;
         private System.Windows.Forms.RichTextBox Output;
-        private System.Windows.Forms.MenuStrip TSBase;
-        private System.Windows.Forms.ToolStripMenuItem TSClear;
-        private System.Windows.Forms.ToolStripMenuItem TSCloseFeed;
-        private System.Windows.Forms.ToolStripMenuItem TSSettings;
-        private System.Windows.Forms.ToolStripMenuItem textToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem TSIncrease;
-        private System.Windows.Forms.ToolStripMenuItem TSDecrease;
+        private System.Windows.Forms.Label FeedHeader;
+        private System.Windows.Forms.Label UIHeader;
+        private System.Windows.Forms.Timer FeedClear;
+        private System.Windows.Forms.Label HideFeed;
     }
 }

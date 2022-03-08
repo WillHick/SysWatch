@@ -84,7 +84,7 @@ namespace SysWatch
             this.BuildHeader.Name = "BuildHeader";
             this.BuildHeader.Size = new System.Drawing.Size(44, 19);
             this.BuildHeader.TabIndex = 1;
-            this.BuildHeader.Text = "1.1.3";
+            this.BuildHeader.Text = "1.1.4";
             // 
             // ChangedHeader
             // 

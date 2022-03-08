@@ -29,7 +29,6 @@ namespace SysWatch
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoubleClickMenu));
             this.UIHeader = new System.Windows.Forms.Label();
             this.MoreHeader = new System.Windows.Forms.Label();
@@ -42,7 +41,6 @@ namespace SysWatch
             this.AvText = new System.Windows.Forms.Label();
             this.DevText = new System.Windows.Forms.Label();
             this.Other = new System.Windows.Forms.Button();
-            this.KeepPOS = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // UIHeader
@@ -50,7 +48,7 @@ namespace SysWatch
             this.UIHeader.AutoSize = true;
             this.UIHeader.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UIHeader.ForeColor = System.Drawing.Color.White;
-            this.UIHeader.Location = new System.Drawing.Point(14, 14);
+            this.UIHeader.Location = new System.Drawing.Point(15, 14);
             this.UIHeader.Name = "UIHeader";
             this.UIHeader.Size = new System.Drawing.Size(121, 30);
             this.UIHeader.TabIndex = 1;
@@ -61,7 +59,7 @@ namespace SysWatch
             this.MoreHeader.AutoSize = true;
             this.MoreHeader.Font = new System.Drawing.Font("Microsoft YaHei", 7F, System.Drawing.FontStyle.Bold);
             this.MoreHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
-            this.MoreHeader.Location = new System.Drawing.Point(129, 24);
+            this.MoreHeader.Location = new System.Drawing.Point(130, 24);
             this.MoreHeader.Name = "MoreHeader";
             this.MoreHeader.Size = new System.Drawing.Size(46, 19);
             this.MoreHeader.TabIndex = 2;
@@ -77,9 +75,9 @@ namespace SysWatch
             this.RestartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RestartButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RestartButton.ForeColor = System.Drawing.Color.White;
-            this.RestartButton.Location = new System.Drawing.Point(19, 57);
+            this.RestartButton.Location = new System.Drawing.Point(20, 57);
             this.RestartButton.Name = "RestartButton";
-            this.RestartButton.Size = new System.Drawing.Size(270, 53);
+            this.RestartButton.Size = new System.Drawing.Size(270, 85);
             this.RestartButton.TabIndex = 3;
             this.RestartButton.Text = "Restart App";
             this.RestartButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -96,9 +94,9 @@ namespace SysWatch
             this.ExitAppButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ExitAppButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExitAppButton.ForeColor = System.Drawing.Color.White;
-            this.ExitAppButton.Location = new System.Drawing.Point(295, 57);
+            this.ExitAppButton.Location = new System.Drawing.Point(296, 57);
             this.ExitAppButton.Name = "ExitAppButton";
-            this.ExitAppButton.Size = new System.Drawing.Size(270, 53);
+            this.ExitAppButton.Size = new System.Drawing.Size(270, 85);
             this.ExitAppButton.TabIndex = 4;
             this.ExitAppButton.Text = "Exit App";
             this.ExitAppButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -115,9 +113,9 @@ namespace SysWatch
             this.CloseWindowButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CloseWindowButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseWindowButton.ForeColor = System.Drawing.Color.White;
-            this.CloseWindowButton.Location = new System.Drawing.Point(19, 116);
+            this.CloseWindowButton.Location = new System.Drawing.Point(20, 148);
             this.CloseWindowButton.Name = "CloseWindowButton";
-            this.CloseWindowButton.Size = new System.Drawing.Size(353, 53);
+            this.CloseWindowButton.Size = new System.Drawing.Size(353, 85);
             this.CloseWindowButton.TabIndex = 5;
             this.CloseWindowButton.Text = "Close Window";
             this.CloseWindowButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -129,7 +127,7 @@ namespace SysWatch
             this.ApText.AutoSize = true;
             this.ApText.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Bold);
             this.ApText.ForeColor = System.Drawing.Color.White;
-            this.ApText.Location = new System.Drawing.Point(15, 245);
+            this.ApText.Location = new System.Drawing.Point(16, 338);
             this.ApText.Name = "ApText";
             this.ApText.Size = new System.Drawing.Size(101, 22);
             this.ApText.TabIndex = 12;
@@ -140,7 +138,7 @@ namespace SysWatch
             this.SpText.AutoSize = true;
             this.SpText.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Bold);
             this.SpText.ForeColor = System.Drawing.Color.White;
-            this.SpText.Location = new System.Drawing.Point(15, 272);
+            this.SpText.Location = new System.Drawing.Point(16, 365);
             this.SpText.Name = "SpText";
             this.SpText.Size = new System.Drawing.Size(102, 22);
             this.SpText.TabIndex = 13;
@@ -156,9 +154,9 @@ namespace SysWatch
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(19, 175);
+            this.button1.Location = new System.Drawing.Point(20, 239);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(353, 53);
+            this.button1.Size = new System.Drawing.Size(353, 85);
             this.button1.TabIndex = 14;
             this.button1.Text = "SysWatch Github";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -170,7 +168,7 @@ namespace SysWatch
             this.AvText.AutoSize = true;
             this.AvText.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Bold);
             this.AvText.ForeColor = System.Drawing.Color.White;
-            this.AvText.Location = new System.Drawing.Point(15, 298);
+            this.AvText.Location = new System.Drawing.Point(16, 391);
             this.AvText.Name = "AvText";
             this.AvText.Size = new System.Drawing.Size(125, 22);
             this.AvText.TabIndex = 15;
@@ -181,7 +179,7 @@ namespace SysWatch
             this.DevText.AutoSize = true;
             this.DevText.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Bold);
             this.DevText.ForeColor = System.Drawing.Color.White;
-            this.DevText.Location = new System.Drawing.Point(15, 324);
+            this.DevText.Location = new System.Drawing.Point(16, 417);
             this.DevText.Name = "DevText";
             this.DevText.Size = new System.Drawing.Size(159, 22);
             this.DevText.TabIndex = 16;
@@ -197,25 +195,20 @@ namespace SysWatch
             this.Other.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Other.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Other.ForeColor = System.Drawing.Color.White;
-            this.Other.Location = new System.Drawing.Point(378, 116);
+            this.Other.Location = new System.Drawing.Point(379, 148);
             this.Other.Name = "Other";
-            this.Other.Size = new System.Drawing.Size(187, 112);
+            this.Other.Size = new System.Drawing.Size(187, 176);
             this.Other.TabIndex = 17;
-            this.Other.Text = "Other";
+            this.Other.Text = "Feed (Beta)";
             this.Other.UseVisualStyleBackColor = false;
             this.Other.Click += new System.EventHandler(this.Other_Click);
-            // 
-            // KeepPOS
-            // 
-            this.KeepPOS.Interval = 1;
-            this.KeepPOS.Tick += new System.EventHandler(this.KeepPOS_Tick);
             // 
             // DoubleClickMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.ClientSize = new System.Drawing.Size(584, 364);
+            this.ClientSize = new System.Drawing.Size(581, 456);
             this.ControlBox = false;
             this.Controls.Add(this.Other);
             this.Controls.Add(this.DevText);
@@ -228,7 +221,7 @@ namespace SysWatch
             this.Controls.Add(this.RestartButton);
             this.Controls.Add(this.MoreHeader);
             this.Controls.Add(this.UIHeader);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -256,6 +249,5 @@ namespace SysWatch
         private System.Windows.Forms.Label AvText;
         private System.Windows.Forms.Label DevText;
         private System.Windows.Forms.Button Other;
-        private System.Windows.Forms.Timer KeepPOS;
     }
 }
