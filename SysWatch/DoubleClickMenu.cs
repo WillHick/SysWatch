@@ -14,8 +14,6 @@ namespace SysWatch
 {
     public partial class DoubleClickMenu : Form
     {
-        SysWatch.LiveFeedUI LFUI = new SysWatch.LiveFeedUI();
-
         [DllImport("Gdi32.dll")]
         private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int nRightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);
 
@@ -56,9 +54,7 @@ namespace SysWatch
         }
         private void Other_Click(object sender, EventArgs e)
         {
-            LFUI.Show();
-            
-            //MessageBox.Show("Thank You <3");
+            Process.Start("https://github.com/WillHick/SysWatch-LiveFeed");
         }
     }
 }

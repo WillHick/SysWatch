@@ -13,8 +13,6 @@ namespace SysWatch
 {
     public partial class UI : Form
     {
-        //Disable For Now (Remake)
-        //SysWatch.LiveFeedUI LFUI = new SysWatch.LiveFeedUI();
         SysWatch.DoubleClickMenu DCMUI = new SysWatch.DoubleClickMenu();
 
         [DllImport("Gdi32.dll")]

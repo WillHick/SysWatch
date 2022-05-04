@@ -181,9 +181,9 @@ namespace SysWatch
             this.DevText.ForeColor = System.Drawing.Color.White;
             this.DevText.Location = new System.Drawing.Point(16, 417);
             this.DevText.Name = "DevText";
-            this.DevText.Size = new System.Drawing.Size(159, 22);
+            this.DevText.Size = new System.Drawing.Size(195, 22);
             this.DevText.TabIndex = 16;
-            this.DevText.Text = "Developed By Will";
+            this.DevText.Text = "Developed By WillHick";
             // 
             // Other
             // 
@@ -199,7 +199,8 @@ namespace SysWatch
             this.Other.Name = "Other";
             this.Other.Size = new System.Drawing.Size(187, 176);
             this.Other.TabIndex = 17;
-            this.Other.Text = "Feed (Beta)";
+            this.Other.Text = "SysWatch LiveFeed\r\nGithub";
+            this.Other.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Other.UseVisualStyleBackColor = false;
             this.Other.Click += new System.EventHandler(this.Other_Click);
             // 

@@ -58,12 +58,6 @@
     <Compile Include="DoubleClickMenu.Designer.cs">
       <DependentUpon>DoubleClickMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="LiveFeedUI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LiveFeedUI.Designer.cs">
-      <DependentUpon>LiveFeedUI.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,9 +68,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DoubleClickMenu.resx">
       <DependentUpon>DoubleClickMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LiveFeedUI.resx">
-      <DependentUpon>LiveFeedUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
