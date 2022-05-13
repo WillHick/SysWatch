@@ -12,12 +12,12 @@ using System.Windows.Forms;
 
 namespace SysWatch
 {
-    public partial class DoubleClickMenu : Form
+    public partial class MoreMenu : Form
     {
         [DllImport("Gdi32.dll")]
         private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int nRightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);
 
-        public DoubleClickMenu()
+        public MoreMenu()
         {
             InitializeComponent();
         }
@@ -29,7 +29,7 @@ namespace SysWatch
 
             //Form Window
             this.FormBorderStyle = FormBorderStyle.None;
-            this.Region = Region.FromHrgn(DoubleClickMenu.CreateRoundRectRgn(0, 0, base.Width, base.Height, 20, 20));
+            this.Region = Region.FromHrgn(MoreMenu.CreateRoundRectRgn(0, 0, base.Width, base.Height, 20, 20));
 
             //Text Set
             ApText.Text = "App Path : " + Application.ExecutablePath.ToString();

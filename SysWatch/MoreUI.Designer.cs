@@ -1,7 +1,7 @@
 ﻿
 namespace SysWatch
 {
-    partial class DoubleClickMenu
+    partial class MoreMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace SysWatch
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoubleClickMenu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MoreMenu));
             this.UIHeader = new System.Windows.Forms.Label();
             this.MoreHeader = new System.Windows.Forms.Label();
             this.RestartButton = new System.Windows.Forms.Button();
@@ -111,14 +111,13 @@ namespace SysWatch
             this.CloseWindowButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.CloseWindowButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.CloseWindowButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CloseWindowButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseWindowButton.Font = new System.Drawing.Font("NSimSun", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseWindowButton.ForeColor = System.Drawing.Color.White;
-            this.CloseWindowButton.Location = new System.Drawing.Point(20, 148);
+            this.CloseWindowButton.Location = new System.Drawing.Point(493, 148);
             this.CloseWindowButton.Name = "CloseWindowButton";
-            this.CloseWindowButton.Size = new System.Drawing.Size(353, 85);
+            this.CloseWindowButton.Size = new System.Drawing.Size(73, 176);
             this.CloseWindowButton.TabIndex = 5;
-            this.CloseWindowButton.Text = "Close Window";
-            this.CloseWindowButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CloseWindowButton.Text = ">";
             this.CloseWindowButton.UseVisualStyleBackColor = false;
             this.CloseWindowButton.Click += new System.EventHandler(this.CloseWindowButton_Click);
             // 
@@ -156,7 +155,7 @@ namespace SysWatch
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(20, 239);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(353, 85);
+            this.button1.Size = new System.Drawing.Size(467, 85);
             this.button1.TabIndex = 14;
             this.button1.Text = "SysWatch Github";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -195,16 +194,16 @@ namespace SysWatch
             this.Other.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Other.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Other.ForeColor = System.Drawing.Color.White;
-            this.Other.Location = new System.Drawing.Point(379, 148);
+            this.Other.Location = new System.Drawing.Point(20, 148);
             this.Other.Name = "Other";
-            this.Other.Size = new System.Drawing.Size(187, 176);
+            this.Other.Size = new System.Drawing.Size(467, 85);
             this.Other.TabIndex = 17;
-            this.Other.Text = "SysWatch LiveFeed\r\nGithub";
+            this.Other.Text = "SysWatch LiveFeed Github";
             this.Other.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Other.UseVisualStyleBackColor = false;
             this.Other.Click += new System.EventHandler(this.Other_Click);
             // 
-            // DoubleClickMenu
+            // MoreMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -226,7 +225,7 @@ namespace SysWatch
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "DoubleClickMenu";
+            this.Name = "MoreMenu";
             this.Opacity = 0.9D;
             this.ShowIcon = false;
             this.ShowInTaskbar = false;

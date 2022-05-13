@@ -82,9 +82,9 @@ namespace SysWatch
             this.BuildHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
             this.BuildHeader.Location = new System.Drawing.Point(129, 24);
             this.BuildHeader.Name = "BuildHeader";
-            this.BuildHeader.Size = new System.Drawing.Size(44, 19);
+            this.BuildHeader.Size = new System.Drawing.Size(31, 19);
             this.BuildHeader.TabIndex = 1;
-            this.BuildHeader.Text = "1.2.0";
+            this.BuildHeader.Text = "1.2";
             // 
             // ChangedHeader
             // 

@@ -52,11 +52,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DoubleClickMenu.cs">
+    <Compile Include="MoreUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DoubleClickMenu.Designer.cs">
-      <DependentUpon>DoubleClickMenu.cs</DependentUpon>
+    <Compile Include="MoreUI.Designer.cs">
+      <DependentUpon>MoreUI.cs</DependentUpon>
     </Compile>
     <Compile Include="UI.cs">
       <SubType>Form</SubType>
@@ -66,8 +66,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DoubleClickMenu.resx">
-      <DependentUpon>DoubleClickMenu.cs</DependentUpon>
+    <EmbeddedResource Include="MoreUI.resx">
+      <DependentUpon>MoreUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

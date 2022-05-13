@@ -13,7 +13,7 @@ namespace SysWatch
 {
     public partial class UI : Form
     {
-        SysWatch.DoubleClickMenu DCMUI = new SysWatch.DoubleClickMenu();
+        SysWatch.MoreMenu DCMUI = new SysWatch.MoreMenu();
 
         [DllImport("Gdi32.dll")]
         private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int nRightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);     
