@@ -48,11 +48,11 @@ namespace SysWatch
         {
             this.Hide();
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void SysWatchGithub_Click(object sender, EventArgs e)
         {
             Process.Start("https://github.com/WillHick/SysWatch");
         }
-        private void Other_Click(object sender, EventArgs e)
+        private void SysWatchFeedGithub_Click(object sender, EventArgs e)
         {
             Process.Start("https://github.com/WillHick/SysWatch-LiveFeed");
         }

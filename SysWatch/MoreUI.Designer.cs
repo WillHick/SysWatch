@@ -37,10 +37,10 @@ namespace SysWatch
             this.CloseWindowButton = new System.Windows.Forms.Button();
             this.ApText = new System.Windows.Forms.Label();
             this.SpText = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SysWatchGithub = new System.Windows.Forms.Button();
             this.AvText = new System.Windows.Forms.Label();
             this.DevText = new System.Windows.Forms.Label();
-            this.Other = new System.Windows.Forms.Button();
+            this.SysWatchFeedGithub = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // UIHeader
@@ -143,24 +143,24 @@ namespace SysWatch
             this.SpText.TabIndex = 13;
             this.SpText.Text = "Start Path :";
             // 
-            // button1
+            // SysWatchGithub
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(20, 239);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(467, 85);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "SysWatch Github";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.SysWatchGithub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.SysWatchGithub.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.SysWatchGithub.FlatAppearance.BorderSize = 0;
+            this.SysWatchGithub.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.SysWatchGithub.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.SysWatchGithub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SysWatchGithub.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SysWatchGithub.ForeColor = System.Drawing.Color.White;
+            this.SysWatchGithub.Location = new System.Drawing.Point(20, 239);
+            this.SysWatchGithub.Name = "SysWatchGithub";
+            this.SysWatchGithub.Size = new System.Drawing.Size(467, 85);
+            this.SysWatchGithub.TabIndex = 14;
+            this.SysWatchGithub.Text = "SysWatch Github";
+            this.SysWatchGithub.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SysWatchGithub.UseVisualStyleBackColor = false;
+            this.SysWatchGithub.Click += new System.EventHandler(this.SysWatchGithub_Click);
             // 
             // AvText
             // 
@@ -184,24 +184,24 @@ namespace SysWatch
             this.DevText.TabIndex = 16;
             this.DevText.Text = "Developed By WillHick";
             // 
-            // Other
+            // SysWatchFeedGithub
             // 
-            this.Other.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.Other.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.Other.FlatAppearance.BorderSize = 0;
-            this.Other.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.Other.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.Other.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Other.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Other.ForeColor = System.Drawing.Color.White;
-            this.Other.Location = new System.Drawing.Point(20, 148);
-            this.Other.Name = "Other";
-            this.Other.Size = new System.Drawing.Size(467, 85);
-            this.Other.TabIndex = 17;
-            this.Other.Text = "SysWatch LiveFeed Github";
-            this.Other.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Other.UseVisualStyleBackColor = false;
-            this.Other.Click += new System.EventHandler(this.Other_Click);
+            this.SysWatchFeedGithub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.SysWatchFeedGithub.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.SysWatchFeedGithub.FlatAppearance.BorderSize = 0;
+            this.SysWatchFeedGithub.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.SysWatchFeedGithub.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.SysWatchFeedGithub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SysWatchFeedGithub.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SysWatchFeedGithub.ForeColor = System.Drawing.Color.White;
+            this.SysWatchFeedGithub.Location = new System.Drawing.Point(20, 148);
+            this.SysWatchFeedGithub.Name = "SysWatchFeedGithub";
+            this.SysWatchFeedGithub.Size = new System.Drawing.Size(467, 85);
+            this.SysWatchFeedGithub.TabIndex = 17;
+            this.SysWatchFeedGithub.Text = "SysWatch LiveFeed Github";
+            this.SysWatchFeedGithub.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SysWatchFeedGithub.UseVisualStyleBackColor = false;
+            this.SysWatchFeedGithub.Click += new System.EventHandler(this.SysWatchGithub_Click);
             // 
             // MoreMenu
             // 
@@ -210,10 +210,10 @@ namespace SysWatch
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.ClientSize = new System.Drawing.Size(581, 456);
             this.ControlBox = false;
-            this.Controls.Add(this.Other);
+            this.Controls.Add(this.SysWatchFeedGithub);
             this.Controls.Add(this.DevText);
             this.Controls.Add(this.AvText);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.SysWatchGithub);
             this.Controls.Add(this.SpText);
             this.Controls.Add(this.ApText);
             this.Controls.Add(this.CloseWindowButton);
@@ -245,9 +245,9 @@ namespace SysWatch
         private System.Windows.Forms.Button CloseWindowButton;
         private System.Windows.Forms.Label ApText;
         private System.Windows.Forms.Label SpText;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button SysWatchGithub;
         private System.Windows.Forms.Label AvText;
         private System.Windows.Forms.Label DevText;
-        private System.Windows.Forms.Button Other;
+        private System.Windows.Forms.Button SysWatchFeedGithub;
     }
 }

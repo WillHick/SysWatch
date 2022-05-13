@@ -14,10 +14,11 @@ namespace SysWatch
     public partial class UI : Form
     {
         SysWatch.MoreMenu DCMUI = new SysWatch.MoreMenu();
+        SysWatch.PopupAlert PUAUI = new SysWatch.PopupAlert();
 
         [DllImport("Gdi32.dll")]
-        private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int nRightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);     
-
+        private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int nRightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);
+       
         public UI()
         {
             InitializeComponent();
@@ -81,6 +82,10 @@ namespace SysWatch
             this._change = 0;
             this._create = 0;
             this._delete = 0;
+        }
+        private void UIHeader_Click(object sender, EventArgs e)
+        {
+            PUAUI.Show();
         }
         private void UI_MouseDoubleClick(object sender, MouseEventArgs e)
         {
