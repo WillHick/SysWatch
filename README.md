@@ -1,4 +1,4 @@
-# SysWatch Beta (1.1.3)
+# SysWatch (1.2.0)
 
 # About
 The app is a simple C# WPF application and will provide you with counts and a feed with the data detected down below is what SysWatch will detect and display in counts.
@@ -11,6 +11,5 @@ SysWatch is a C# Windows application using the FileSystemWatcher component to de
   - How many files have been renamed
   - How many files have been moved
 
-# UI (1.1.3 - UI Subject To Change)
-
-<img width="423" alt="SysWatch1 1 3UI" src="https://user-images.githubusercontent.com/48844761/156914828-aad25529-4981-4c8e-946e-d7992d8e2d8d.PNG">
+# More
+SysWatch also has anoter standalone application that will show live events in a standalone evironment which can show locations of events and changed files and more, find it here - https://github.com/WillHick/SysWatch-LiveFeed
