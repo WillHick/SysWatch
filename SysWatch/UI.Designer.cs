@@ -50,6 +50,8 @@ namespace SysWatch
             this.UIDash2 = new System.Windows.Forms.Label();
             this.UIDash1 = new System.Windows.Forms.Label();
             this.CopyStats = new System.Windows.Forms.Label();
+            this.ToggleSysWatch = new System.Windows.Forms.Button();
+            this.ToggleHeader = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.SysWatchFile)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,7 +87,7 @@ namespace SysWatch
             this.BuildHeader.Name = "BuildHeader";
             this.BuildHeader.Size = new System.Drawing.Size(31, 19);
             this.BuildHeader.TabIndex = 1;
-            this.BuildHeader.Text = "1.3";
+            this.BuildHeader.Text = "1.4";
             // 
             // ChangedHeader
             // 
@@ -272,13 +274,40 @@ namespace SysWatch
             this.CopyStats.Text = "Copy";
             this.CopyStats.Click += new System.EventHandler(this.CopyStats_Click);
             // 
+            // ToggleSysWatch
+            // 
+            this.ToggleSysWatch.BackgroundImage = global::SysWatch.Properties.Resources.icons8_toggle_on_96;
+            this.ToggleSysWatch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ToggleSysWatch.FlatAppearance.BorderSize = 0;
+            this.ToggleSysWatch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            this.ToggleSysWatch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ToggleSysWatch.Location = new System.Drawing.Point(158, 397);
+            this.ToggleSysWatch.Name = "ToggleSysWatch";
+            this.ToggleSysWatch.Size = new System.Drawing.Size(50, 42);
+            this.ToggleSysWatch.TabIndex = 21;
+            this.ToggleSysWatch.UseVisualStyleBackColor = true;
+            this.ToggleSysWatch.Click += new System.EventHandler(this.ToggleSysWatch_Click);
+            // 
+            // ToggleHeader
+            // 
+            this.ToggleHeader.AutoSize = true;
+            this.ToggleHeader.Font = new System.Drawing.Font("Microsoft YaHei", 8.6F, System.Drawing.FontStyle.Bold);
+            this.ToggleHeader.ForeColor = System.Drawing.Color.White;
+            this.ToggleHeader.Location = new System.Drawing.Point(117, 405);
+            this.ToggleHeader.Name = "ToggleHeader";
+            this.ToggleHeader.Size = new System.Drawing.Size(39, 25);
+            this.ToggleHeader.TabIndex = 22;
+            this.ToggleHeader.Text = "On";
+            // 
             // UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.ClientSize = new System.Drawing.Size(231, 456);
+            this.ClientSize = new System.Drawing.Size(231, 446);
             this.ControlBox = false;
+            this.Controls.Add(this.ToggleHeader);
+            this.Controls.Add(this.ToggleSysWatch);
             this.Controls.Add(this.CopyStats);
             this.Controls.Add(this.UIDash4);
             this.Controls.Add(this.UIDash3);
@@ -334,6 +363,8 @@ namespace SysWatch
         private System.Windows.Forms.Label UIDash2;
         private System.Windows.Forms.Label UIDash1;
         private System.Windows.Forms.Label CopyStats;
+        private System.Windows.Forms.Button ToggleSysWatch;
+        private System.Windows.Forms.Label ToggleHeader;
     }
 }
 

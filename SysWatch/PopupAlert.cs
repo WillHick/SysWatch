@@ -27,7 +27,7 @@ namespace SysWatch
             this.Region = Region.FromHrgn(PopupAlert.CreateRoundRectRgn(0, 0, base.Width, base.Height, 20, 20));
 
             Rectangle workingArea = Screen.GetWorkingArea(this);
-            this.Location = new Point(workingArea.Right - 8 - base.Size.Width, workingArea.Bottom - 469 - base.Size.Height);
+            this.Location = new Point(workingArea.Right - 8 - base.Size.Width, workingArea.Bottom - 460 - base.Size.Height);
         }
         private void Heart_Click(object sender, EventArgs e)
         {

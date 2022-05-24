@@ -25,7 +25,7 @@ namespace SysWatch
         {
             //Form Position
             Rectangle workingArea = Screen.GetWorkingArea(this);
-            this.Location = new Point(workingArea.Right - 248 - base.Size.Width, workingArea.Bottom - 6 - base.Size.Height);
+            this.Location = new Point(workingArea.Right - 247 - base.Size.Width, workingArea.Bottom - 6 - base.Size.Height);
 
             //Form Window
             this.FormBorderStyle = FormBorderStyle.None;
@@ -55,6 +55,14 @@ namespace SysWatch
         private void SysWatchFeedGithub_Click(object sender, EventArgs e)
         {
             Process.Start("https://github.com/WillHick/SysWatch-LiveFeed");
+        }
+        private void ToggleOnLink_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://icons8.com/icon/88034/toggle-on");
+        }
+        private void ToggleOffLink_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://icons8.com/icon/20006/toggle-off");
         }
     }
 }

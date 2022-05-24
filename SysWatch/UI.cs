@@ -95,5 +95,23 @@ namespace SysWatch
         {
             Clipboard.SetText("Copied At  : " + DateTime.Now.ToShortTimeString() + Environment.NewLine + "Changed Files : " + NumChanged.Text.ToString() + Environment.NewLine + "Created Files : " + NumCreated.Text.ToString() + Environment.NewLine + "Renamed Files : " + NumRename.Text.ToString() + Environment.NewLine + "Deleted Files : " + NumDelete.Text.ToString());
         }
+        //Toggle Feed Counting
+        private void ToggleSysWatch_Click(object sender, EventArgs e)
+        {
+            if (SysWatchFile.EnableRaisingEvents == true)
+            {
+                SysWatchFile.EnableRaisingEvents = false;
+                ToggleHeader.Text = "Off";
+
+                ToggleSysWatch.BackgroundImage = SysWatch.Properties.Resources.icons8_toggle_off_96;
+            }
+            else if (SysWatchFile.EnableRaisingEvents == false)
+            {
+                SysWatchFile.EnableRaisingEvents = true;
+                ToggleHeader.Text = "On";
+
+                ToggleSysWatch.BackgroundImage = SysWatch.Properties.Resources.icons8_toggle_on_96;
+            }
+        }
     }
 }
