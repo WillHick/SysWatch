@@ -1,4 +1,4 @@
-# SysWatch (1.2.0)
+# SysWatch (1.3.0)
 
 # About
 The app is a simple C# WPF application and will provide you with counts and a feed with the data detected down below is what SysWatch will detect and display in counts.
