@@ -1,6 +1,6 @@
 # SysWatch 1.4
 
-<a href="https://"><img src="https://img.shields.io/badge/Language-C%23-2ea44f" alt="Language - C#">   </a> <a href="https://"><img src="https://img.shields.io/badge/Platform-Windows-f34a26" alt="Platform - Windows"></a>
+<a href="https://"><img src="https://img.shields.io/badge/Language-C%23-2ea44f" alt="Language - C#">   <a href="https://www.microsoft.com/" title="Go to Microsoft homepage"><img src="https://img.shields.io/badge/OS-Windows-blue?logo=windows&logoColor=white" alt="OS - Windows"></a>
 
 # About 
 The SysWatch App Uses The  FileSystemWatcher Component To Detect 4 Different Types Of Events (Changes, Deleted, Renamed & Moved Files) And Puts Then Into A Count To See How Many Events Have Happened. 
